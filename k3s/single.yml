@@ -1,0 +1,5 @@
+# Playbook from: https://github.com/PyratLabs/ansible-role-k3s
+- hosts: k3s_nodes
+  become: true
+  roles:
+     - { role: xanmanning.k3s, k3s_release_version: v0.10.2 }
