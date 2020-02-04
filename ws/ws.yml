@@ -1,0 +1,8 @@
+---
+- hosts: ws
+  become: true
+  roles:
+    - role: NerdsvilleCEO.ansible_role_common
+      vars:
+        primary_user: "{{ default_user }}"
+        primary_group: "{{ default_user }}"
